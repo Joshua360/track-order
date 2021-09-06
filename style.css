@@ -1,0 +1,20 @@
+
+
+.order-wrap{
+    background-color: #ECEFF1;
+    padding: 30px 0 30px 10px;
+    border-radius: 10px;
+    margin-top: 70px;
+}
+
+.head{
+    color: white;
+}
+
+body {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #8C9EFF;
+    background-repeat: no-repeat
+}
