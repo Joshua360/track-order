@@ -25,10 +25,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Track order</a>
+                      <a class="nav-link active" aria-current="page" href="index.php">Track order</a>
                     </li>
+                  
+
                     <li class="nav-item">
-                      <a class="nav-link active" href="option-a.html">Order status</a>
+                      <a class="nav-link active" href="submit_data.php">Submit Data</a>
                     </li>
                     
                    
@@ -41,7 +43,25 @@
       </nav>
 
 
+<!-- <?php
 
+require_once('includes/dbh.php');
+
+$sql = "SELECT * FROM orders;";
+$result = mysqli_query($conn, $sql);
+$resultCheck = mysqli_num_rows($result);
+
+if($resultCheck>0){
+  while($row=mysqli_fetch_assoc($result)){
+    var_dump($row);
+
+  }
+
+}
+
+
+
+?> -->
 
 
       <div class="container px-1 px-md-4 py-5 mx-auto">
@@ -50,7 +70,7 @@
 
             <div class="row d-flex justify-content-between px-3 top">
                 <div class="d-flex">
-                    <h6 style="padding-right: 15px;">Order Number: <span class="text-primary font-weight-bold">#Y34XDHR</span></h6> <br>
+                    <h6 style="padding-right: 15px;">Order Number: <span class="text-primary font-weight-bold">#42536J</span></h6> <br>
                     <h6 style="display: inline-block;">Order Name: <span class="text-primary font-weight-bold">chris Embarambamba</span></h6>
 
                 </div>
@@ -64,7 +84,7 @@
                     <ul id="progressbar" class="text-center">
                         <li class="active step0"></li>
                         <li class="active step0"></li>
-                        <li class=" step0"></li>
+                        <li class="active step0"></li>
                         <li class="step0"></li>
                     </ul>
                 </div>

@@ -22,10 +22,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Track Order</a>
+                      <a class="nav-link active" aria-current="page" href="index.php">Track Order</a>
                     </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link active" href="option-a.php">Order Status</a>
+                    </li> -->
+
                     <li class="nav-item">
-                      <a class="nav-link active" href="option-a.html">Order Status</a>
+                      <a class="nav-link active" href="submit_data.php">Submit Data</a>
                     </li>
                     
                    
@@ -42,11 +46,11 @@
 
       <div class="container order-wrap">
         <h2>Track Your Order Now</h2>
-        <form class="row g-3">
+        <form class="row g-3" method="post" action="includes/track.php">
             
             <div class="col-auto">
               <label for="ordernumber" class="visually-hidden">Order Number</label>
-              <input type="text" class="form-control" id="ordernumber" placeholder="Enter order number">
+              <input name="checkOrder" type="text" class="form-control" id="ordernumber" placeholder="Enter order number">
             </div>
             <div class="col-auto">
               <button type="submit" class="btn btn-primary mb-3">Track Now</button>
